@@ -39,7 +39,10 @@ const TodoApp = () => {
     return (
         <div>
             <TodoHeader />
-            <TodoList items={items} count={count} handleToggleTask={handleToggleTask} />
+            <TodoList items={items}
+            // To do useContext to avoid pass count as a props to TodoList
+                count={count}
+                handleToggleTask={handleToggleTask} />
             <TodoForm addTask={addTask} />
         </div>
     )
